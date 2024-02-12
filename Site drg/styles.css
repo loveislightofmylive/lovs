@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(path/vers/la/police/pacifico.woff2) format('woff2');
+}
+
+body {
+	background-color: #ffffff;
+    background-image: url('pics/background.jpeg');   
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+	cursor: pointer;
+    font-size: 20px;
+    margin: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+	color: #fff; /* Couleur du texte par défaut */
+	transition: color 0.6s;
+}
+
+.menu-toggle:hover {
+    color: yellow; /* Nouvelle couleur du texte au survol du bouton "Menu" */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    overflow-y: auto;
+    transition: left 0.5s;
+    z-index: 1;
+    border-top-width: 0;
+}
+
+.menu-expanded {
+    left: 0;
+}
+
+.menu-items {
+    padding: 5px;
+	z-index: 2;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+	padding-top: 10px;
+    margin-bottom: 10px;
+	margin-top: 10px; /* Ajustez cette valeur selon vos préférences pour rabaisser les boutons */
+    background: linear-gradient(90deg, #333, #333);
+    color: #fff;
+    transition: color 0.6s;
+	transform: translateY(30px); /* Ajustez cette valeur selon vos préférences */
+
+}
+
+.menu a:hover {
+    color: #8aff8a;
+}
+
+.dropdown-content {
+    display: none;
+    padding-left: 15px;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 10px;
+}
+
+.menu-toggle-hidden {
+    display: none;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/* Ajout de styles pour la bulle autour du bouton Menu */
+.bubble-bg {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+/* Ajout de styles pour le bouton de recherche et le champ de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligner à droite */
+    margin-top: 10px;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    display: none; /* Masquer par défaut */
+}
+
+.search-bar button {
+    cursor: pointer;
+    padding: 5px;
+    display: none; /* Masquer par défaut */
+}
+
+/* Style pour surligner le mot recherché */
+.highlight {
+    background-color: yellow;
+}
+
+.content-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec opacité de 80% */
+    padding: 20px; /* Ajouter une marge intérieure pour séparer du bord */
+}
+/* ... (autres styles) ... */
+
+.settings-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+	z-index: 2;
+	color: #fff; /* Couleur du texte par défaut */
+	transition: color 0.6s;
+}
+
+.settings-button:hover {
+    color: yellow; /* Nouvelle couleur du texte au survol du bouton "Menu" */
+}
+
+.settings-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.settings-popup h2 {
+    margin-bottom: 10px;
+}
+
+.settings-popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.settings-popup button {
+    background-color: #8aff8a;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.settings-popup button:hover {
+    background-color: #5fbd5f;
+}
+
+.bubble-bgb {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+
+/* Ajouterr un style spécifique pour les cases de choix */
+.settings-popup label input[type="checkbox"],
+.settings-popup label input[type="radio"] {
+    margin-right: 5px;
+}
+

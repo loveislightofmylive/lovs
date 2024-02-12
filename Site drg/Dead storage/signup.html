@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesignup.css">
+    <script src="signup.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Sign Up</h1>
+</header>
+
+<div class="login-container">
+    <form id="signupForm" class="signup-form">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <button type="button" onclick="createAccount()">Create Account</button>
+    </form>
+
+    <!-- Pop-up for success message -->
+    <div id="successPopup" class="popup" style="display: none;">
+        <p id="accountCreatedMessage" style="color: green;">Account created successfully!</p>
+        <button onclick="closePopup('successPopup')">OK</button>
+    </div>
+
+    <!-- Pop-up for error message -->
+    <div id="errorPopup" class="popup" style="display: none;">
+        <p id="errorMessage" style="color: #fff;">Username already exists. Please choose a different username.</p>
+        <button onclick="closePopup('errorPopup')">OK</button>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

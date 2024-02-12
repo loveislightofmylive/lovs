@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="pics/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Love You</title>
+</head>
+<body>
+
+<div class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+<div class="settings-button bubble-bgb" onclick="toggleSettingsPopup()">&#9881; Réglages</div>
+
+
+    <!-- Pop-up de réglages -->
+    <div class="settings-popup" id="settingsPopup">
+        <h2>Réglages</h2>
+        <label>
+            <input type="checkbox" id="opacityFilter"> Supprimer le filtre d'opacité
+        </label>
+        <label>
+            <input type="checkbox" id="removeBackground"> Supprimer le fond d'écran
+        </label>
+        <label>
+            <input type="checkbox" name="backgroundType" value="blue"> Fond bleu
+        </label>
+        <label>
+            <input type="checkbox" name="backgroundType" value="pink"> Fond rose pastel
+		</label>
+		<label>
+            <input type="checkbox" name="backgroundType" value="green"> Fond vert
+		</label>
+		<label>
+            <input type="checkbox" name="backgroundType" value="purple"> Fond violet
+		</label>
+		<label>
+			<input type="checkbox" name="textColor" value="black"> Texte noir
+		</label>
+		<label>
+			<input type="checkbox" name="textColor" value="white"> Texte blanc
+		</label>
+			<button onclick="applySettings()">Appliquer</button>
+    </div>
+</div>
+
+<header>
+    <h1>Love You</h1>
+	 <div class="search-bar">
+        <div class="search-icon" onclick="toggleSearch()">&#128269;</div>
+        <input type="text" id="searchInput" placeholder="Rechercher..." onkeypress="handleKeyPress(event)">
+        <button id="searchButton" onclick="searchTerm()">Rechercher</button>
+    </div>
+</header>
+
+<nav class="menu">
+    <ul class="menu-items">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="img.html">Storymages</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="login.html">Se déconnecter</a></li>
+    </ul>
+</nav>
+
+<div class="content-container">
+
+<!-- Intégration de la lettre d'amour -->
+<div class="love-letter">
+    <p>Ma Chère Pia,</p>
+    
+    <p>Je prends un moment pour t'écrire et exprimer les sentiments qui habitent mon cœur. Chaque jour avec toi est un nouveau chapitre dans le livre de notre vie commune, et chaque page est remplie de moments de bonheur, de rires et d'amour.</p>
+    
+    <p>Ton sourire illumine mes journées, et ta présence réchauffe mon keur. Je suis reconnaissant de partager cette aventure avec toi, de créer des souvenirs qui resteront gravés dans nos mémoires pour toujours.</p>
+    
+    <p>Notre amour est comme une mélodie douce et apaisante, qui accompagne chacun de nos pas. Les petites attentions, les regards complices, et même les instants de complicité silencieuse rendent notre histoire unique et précieuse.</p>
+    
+    <p>À travers les hauts et les bas, nous grandissons ensemble, renforçant notre lien chaque jour. Tu es mon plus grand amour, et je suis impatient de continuer cette aventure main dans la main.</p>
+    
+    <p>Je t'aime plus que les mots ne peuvent le dire, et mon amour pour toi grandit constamment, comme une fleur qui s'épanouit sous le doux soleil de notre vie partagée.</p>
+    
+    <p>Avec tout mon amour,</p>
+    <p>Maxime</p>
+</div>
+
+<div class="poem">
+    <!-- Poème -->
+    <p>Dans la douce nuit étoilée, où les étoiles dansent et scintillent,</p>
+    <p>Se tisse un poème, une mélodie silencieuse qui chatouille l'âme.</p>
+    <p>Les mots, tels des papillons, virevoltent dans l'air calme,</p>
+    <p>Emportant nos rêves et nos espoirs vers des cieux sans fin.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

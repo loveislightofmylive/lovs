@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="pics/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="img.css">
+    <title>Love You</title>
+</head>
+<body>
+
+<div class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+<div class="settings-button bubble-bgb" onclick="toggleSettingsPopup()">&#9881; Réglages</div>
+
+
+    <!-- Pop-up de réglages -->
+    <div class="settings-popup" id="settingsPopup">
+        <h2>Réglages</h2>
+        <label>
+            <input type="checkbox" id="opacityFilter"> Supprimer le filtre d'opacité
+        </label>
+        <label>
+            <input type="checkbox" id="removeBackground"> Supprimer le fond d'écran
+        </label>
+        <label>
+            <input type="checkbox" name="backgroundType" value="blue"> Fond bleu
+        </label>
+        <label>
+            <input type="checkbox" name="backgroundType" value="pink"> Fond rose pastel
+		</label>
+		<label>
+            <input type="checkbox" name="backgroundType" value="green"> Fond vert
+		</label>
+		<label>
+            <input type="checkbox" name="backgroundType" value="purple"> Fond violet
+		</label>
+		<label>
+			<input type="checkbox" name="textColor" value="black"> Texte noir
+		</label>
+		<label>
+			<input type="checkbox" name="textColor" value="white"> Texte blanc
+		</label>
+			<button onclick="applySettings()">Appliquer</button>
+    </div>
+</div>
+
+<header>
+    <h1>Love You</h1>
+	 <div class="search-bar">
+        <div class="search-icon" onclick="toggleSearch()">&#128269;</div>
+        <input type="text" id="searchInput" placeholder="Rechercher..." onkeypress="handleKeyPress(event)">
+        <button id="searchButton" onclick="searchTerm()">Rechercher</button>
+    </div>
+</header>
+
+<nav class="menu">
+    <ul class="menu-items">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="img.html">Storymages</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="login.html">Se déconnecter</a></li>
+    </ul>
+</nav>
+
+<div class="image-container">
+    <!-- Première paire -->
+    <div class="image-wrapper">
+        <img class="image" src="pics/background.jpeg" alt="Background">
+        <div class="text-overlay">
+            <p>J'aime la nature</p>
+			<p>Toute sa beauté et sa verdure</p>
+			<p>Mais jamais elle ne sera aussi pure</p>
+			<p>Que ma dulcinée pour qui mon amour perdure</p>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <img class="image" src="pics/dix.jpeg" alt="Dix">
+        <div class="text-overlay">
+            <p>Jamais je n'ai autant languis</p>
+			<p>De toute ma vie</p>
+			<p>Que de te revoir après ce jour maudit</p>
+			<p>Pour rester avec toi jusqu'à l'infini</p>
+        </div>
+    </div>
+
+    <!-- Deuxième paire -->
+    <div class="image-wrapper">
+        <img class="image" src="pics/map.jpeg" alt="Map">
+        <div class="text-overlay">
+            <p>J'ai trop aimé Montpellier</p>
+			<p>Une belle ville avec un KFC</p>
+			<p>Lieu de mon premier baiser</p>
+			<p>La ville ou j'ai rencontré ma bien aimée</p>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <img class="image" src="pics/mail.jpeg" alt="Mail">
+        <div class="text-overlay">
+            <p>T'écrire a toujours été un bonheur</p>
+			<p>Un calin, un baiser, une fleur</p>
+			<p>Seul te perdre me fait peur</p>
+			<p>Je serai là pour toi, jusqu'à ce que je meurs</p>
+        </div>
+    </div>
+
+    <!-- Troisième paire -->
+    <div class="image-wrapper">
+        <img class="image" src="pics/sky.jpeg" alt="Sky">
+        <div class="text-overlay">
+            <p>À celle qui brille, éclat dans mes jours</p>
+			<p>Sa lumière douce, un éternel parcours</p>
+			<p>Son sourire, soleil dans chaque coin</p>
+			<p>Dans son aura, mon keur trouve son soin</p>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <img class="image" src="pics/voc.jpeg" alt="Voc">
+        <div class="text-overlay">
+            <p>J'adore passer mes heures au téléphone</p>
+			<p>Attendre des heures pour qu'il sonne</p>
+			<p>Apprécier chaque sensation que l'appel donne</p>
+			<p>Tendre plaisir, assis sur mon trône</p>
+        </div>
+    </div>
+
+    <!-- Quatrième paire -->
+    <div class="image-wrapper">
+        <img class="image" src="pics/writer.jpeg" alt="Writer">
+        <div class="text-overlay">
+            <p>J'ai aimé écrire pour toi</p>
+			<p>Rien ne canalisait mieux mon émoi</p>
+			<p>Par ce que je t'aime je crois</p>
+			<p>J'ai écrit Pia dans tous ses états</p>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <img class="image" src="pics/discord.jpeg" alt="Discord">
+        <div class="text-overlay">
+            <p>Plus que les mails je remercie discord</p>
+			<p>Qui a supporté nos discordes</p>
+			<p>jusqu'aboutir à la concorde</p>
+			<p>Tisser les fils de l'amour pour former une corde</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
